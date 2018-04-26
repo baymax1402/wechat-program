@@ -1,0 +1,29 @@
+<view class="question-cell">
+    <view class="question-content">
+        <view class="user-info">
+            <view class="user-icon">
+                <image src="{{model.headerImg}}" wx:if="model.headerImg !== ''" class="user-img" />
+                <image src="{{userIcon}}" class="placeholder-img" wx:else />
+            </view>
+            <view class="analyst-name">
+                <text class="dark">{{model.answerName}}</text>
+            </view>
+        </view>
+        <view class="question-info">
+            <view class="type-info">
+                <label>
+                   <span class="question-type">{{model.type}}</span>
+                   <span class="pl10 gray">{{model.createTime}}</span>
+                </label>
+            </view>
+            <view class="chat-info">
+                <view class="chat">
+                    <view class="arrow">
+                    </view>
+                    <p class="question gray f32">{{model.question}}</p>
+                    <p class="message dark f38">{{model.message}}</p>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

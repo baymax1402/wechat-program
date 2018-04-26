@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<image src="{{bg}}" class="slide-image" height="150"/>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="slide-swiper">
+    <block wx:for="{{imgUrls}}" wx:key="item.id">
+        <swiper-item>
+            <image src="{{item.url}}" class="slide-image" height="150"/>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="wrapper">
+    <p class="section">
+        <span class="line"></span>
+        <span class="title">问题列表</span>
+    </p>
+    <ul class="list">
+        <li wx:for="{{questions}}" wx:key="item.id" class="question-item">
+            <view class="question-content">
+                <view class="user-info">
+                    <view class="user-icon">
+                        <image src="{{item.headerImg}}" wx:if="item.headerImg !== ''" class="user-img" />
+                        <image src="{{userIcon}}" class="placeholder-img" wx:else />
+                    </view>
+                    <view class="analyst-name">
+                        <text class="dark">{{item.answerName}}</text>
+                    </view>
+                </view>
+                <view class="question-info">
+                    <view class="type-info">
+                        <label>
+                           <span class="question-type">{{item.type}}</span>
+                           <span class="question-time">{{item.createTime}}</span>
+                        </label>
+                    </view>
+                    <view class="chat-info">
+                        <view class="chat">
+                            <view class="arrow">
+                            </view>
+                            <p class="question gray f32">{{item.question}}</p>
+                            <p class="message dark f38">{{item.message}}</p>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </li>
+    </ul>
+
+
+
+</view>

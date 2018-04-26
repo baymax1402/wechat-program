@@ -1,0 +1,9 @@
+{
+    "code":"1",
+    "msg":"请求成功",
+    "data":[
+         {"tid":"10104","fid":"1","uid":"3555","author":"外汇 发表人","starttime":"10:00","endtime":"11:30","analysts":"汇评沙龙","status":1,"status_info":"已经结束"},
+         {"tid":"10105","fid":"2","uid":"3552","author":"黄金 发表人","starttime":"14:30","endtime":"16:00","analysts":"黄金沙龙","status":1,"status_info":"已经结束"},
+         {"tid":"10106","fid":"3","uid":"3553","author":"张丽燕","starttime":"20:00","endtime":"21:30","analysts":"汇评沙龙","status":3,"status_info":"即将开始"}
+    ]
+}

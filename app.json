@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "已回答问题",
+      "iconPath": "static/images/tab/index.png",
+      "selectedIconPath": "static/images/tab/index-selected.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "所有提问",
+      "iconPath": "static/images/tab/log.png",
+      "selectedIconPath": "static/images/tab/log-selected.png"
+    }, {
+        "pagePath": "pages/logs/logs",
+        "text": "我的提问",
+        "iconPath": "static/images/tab/count.png",
+        "selectedIconPath": "static/images/tab/count-selected.png"
+    }],
+    "color": "#666",
+    "selectedColor": "#ff8162"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
